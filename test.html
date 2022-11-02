@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@1.4.6/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+    <div
+        class="mt-10 mb-10  overflow-hidden  shadow-lg  bg-orange-900 shadow-lg border rounded-lg ">
+        <div class="">
+            <div class="p-5 text-white text-center text-3xl bg-orange-600">Calculator</div>
+            <div type="text" class="p-5 pb-0 w-full outline-none text-white text-right text-3xl bg-orange-500" id="equation">0</div>
+            <input type="text" class="p-5 w-full outline-none text-white text-right text-3xl bg-orange-500" id="finalOutput" value="2100">
+            <div class="flex items-center pt-3 bg-purple-900 h-19">
+                <div class="flex-1 px-2 py-2 justify-center flex items-ceter text-white text-2xl font-semibold">
+                    <button class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+                        id="leftBracket">
+                        (</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none"
+                        id="rightBracket">
+                        )</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="cancel">
+                        C</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="divide">
+                        ÷</button>
+                </div>
+            </div>
+
+            <div class="flex items-stretch bg-purple-900 h-19">
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="rsquare-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2  rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="seven">
+                        7</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="eight">
+                        8</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="nine">
+                        9</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="multiply">
+                        ×</button>
+                </div>
+            </div>
+
+            <div class="flex items-stretch bg-purple-900 h-19">
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="four">
+                        4</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="five">
+                        5</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="six">
+                        6</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="minus">
+                        -</button>
+                </div>
+            </div>
+
+            <div class="flex items-stretch bg-purple-900 h-19">
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="one">
+                        1</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="two">
+                        2</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="three">
+                        3</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="addition">
+                        +</button>
+                </div>
+            </div>
+
+
+            <div class="flex items-stretch bg-purple-900 h-19 pb-3 ">
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="modulo">
+                        %</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="zero">
+                        0</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-purple-800 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="point">
+                        .</button>
+                </div>
+
+                <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+                    <button
+                        class="square-full h-10 w-10 flex items-center bg-orange-500 justify-center shadow-lg border-2 rounded-lg border-purple-700 hover:border-2 hover:border-gray-500 focus:outline-none" id="equals">
+                        =</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./calculator.js"></script>
+</body>
+
+</html>
