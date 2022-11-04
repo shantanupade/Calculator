@@ -7,8 +7,8 @@ for (button of allButtons){
         btnText = e.target.innerText;
         finalOutput.value = btnText; 
         console.log(btnText)
-        // if(){
-
+        // if( btnText == '+' || btnText == '-'|| btnText == '×' ){
+        //     equation.textContent = btnText;
         // }
     })
 }
